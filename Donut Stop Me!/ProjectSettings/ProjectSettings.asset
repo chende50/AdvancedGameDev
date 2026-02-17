@@ -4,7 +4,7 @@
 PlayerSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 28
-  productGUID: 0ad52c2d111ae3f45b4c2651ed4a0621
+  productGUID: ed205e23ebd3891448e38bd14c18bc46
   AndroidProfiler: 0
   AndroidFilterTouchesWhenObscured: 0
   AndroidEnableSustainedPerformanceMode: 0
@@ -13,7 +13,7 @@ PlayerSettings:
   useOnDemandResources: 0
   accelerometerFrequency: 60
   companyName: DefaultCompany
-  productName: AdvGameDesignProject
+  productName: Donut Stop Me!
   defaultCursor: {fileID: 0}
   cursorHotspot: {x: 0, y: 0}
   m_SplashScreenBackgroundColor: {r: 0.13725491, g: 0.12156863, b: 0.1254902, a: 1}
@@ -846,14 +846,14 @@ PlayerSettings:
   editorAssembliesCompatibilityLevel: 1
   m_RenderingPath: 1
   m_MobileRenderingPath: 1
-  metroPackageName: AdvGameDesignProject
+  metroPackageName: Donut Stop Me!
   metroPackageVersion: 
   metroCertificatePath: 
   metroCertificatePassword: 
   metroCertificateSubject: 
   metroCertificateIssuer: 
   metroCertificateNotAfter: 0000000000000000
-  metroApplicationDescription: AdvGameDesignProject
+  metroApplicationDescription: Donut Stop Me!
   wsaImages: {}
   metroTileShortName: 
   metroTileShowName: 0
@@ -924,10 +924,10 @@ PlayerSettings:
   captureStartupLogs: {}
   activeInputHandler: 1
   windowsGamepadBackendHint: 0
-  cloudProjectId: cdc58e5e-dec8-4d6d-9662-adca916ddba8
+  cloudProjectId: f0136ad4-e08c-4198-8ad9-8cf50ef5f17b
   framebufferDepthMemorylessMode: 0
   qualitySettingsNames: []
-  projectName: AdvGameDesignProject
+  projectName: Donut Stop Me!
   organizationId: jammies_spring26
   cloudEnabled: 0
   legacyClampBlendShapeWeights: 0
