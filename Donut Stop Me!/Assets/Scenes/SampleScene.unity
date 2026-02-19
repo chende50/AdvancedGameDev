@@ -393,31 +393,31 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: 3d11f70ae61937044a92f33985a90dae, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 7.7660403
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 3d11f70ae61937044a92f33985a90dae, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.120000005
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 3d11f70ae61937044a92f33985a90dae, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -8.259927
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 3d11f70ae61937044a92f33985a90dae, type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0.9939048
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 3d11f70ae61937044a92f33985a90dae, type: 3}
       propertyPath: m_LocalRotation.x
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 3d11f70ae61937044a92f33985a90dae, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0.11024158
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 3d11f70ae61937044a92f33985a90dae, type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 3d11f70ae61937044a92f33985a90dae, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -425,7 +425,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 3d11f70ae61937044a92f33985a90dae, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
-      value: 12.658
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 3d11f70ae61937044a92f33985a90dae, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
@@ -438,8 +438,72 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 3d11f70ae61937044a92f33985a90dae, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 745794059}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 3d11f70ae61937044a92f33985a90dae, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 745794058}
   m_SourcePrefab: {fileID: 100100000, guid: 3d11f70ae61937044a92f33985a90dae, type: 3}
+--- !u!1 &745794057 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 3d11f70ae61937044a92f33985a90dae, type: 3}
+  m_PrefabInstance: {fileID: 745794056}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &745794058
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 745794057}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 62899f850307741f2a39c98a8b639597, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.InputSystem::UnityEngine.InputSystem.PlayerInput
+  m_Actions: {fileID: -944628639613478452, guid: 052faaac586de48259a63d0c4782560b, type: 3}
+  m_NotificationBehavior: 0
+  m_UIInputModule: {fileID: 0}
+  m_DeviceLostEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  m_DeviceRegainedEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  m_ControlsChangedEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  m_ActionEvents: []
+  m_NeverAutoSwitchControlSchemes: 0
+  m_DefaultControlScheme: 
+  m_DefaultActionMap: 
+  m_SplitScreenIndex: -1
+  m_Camera: {fileID: 0}
+--- !u!136 &745794059
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 745794057}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.18262675
+  m_Height: 1.4177135
+  m_Direction: 1
+  m_Center: {x: -0.00634706, y: 0.70862, z: -0.001805827}
 --- !u!1 &832575517
 GameObject:
   m_ObjectHideFlags: 0
