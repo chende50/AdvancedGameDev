@@ -5,6 +5,7 @@ public class playerAnimator : MonoBehaviour
 {
     private Animator animator;
     private InputAction moveAction;
+    private InputAction jumpAction;
 
     void Awake()
     {
