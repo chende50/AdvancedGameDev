@@ -3,6 +3,8 @@ using UnityEngine;
 public class SawBlade : MonoBehaviour
 {
     [SerializeField] private int SPIN_SPEED;
+    [SerializeField] private int MOVE_SPEED;
+    [SerializeField] private float POSITION;
 
     private Vector3 spinVector = Vector3.zero;
 
@@ -17,5 +19,8 @@ public class SawBlade : MonoBehaviour
     {
         spinVector.x = SPIN_SPEED * Time.deltaTime;
         gameObject.transform.Rotate(spinVector, Space.Self);
+
+        POSITION += MOVE_SPEED * Time.deltaTime;
+        gameObject.transform.localPosition = new Vector3(0, 0, Mathf.Sin(POSITION));
     }
 }
