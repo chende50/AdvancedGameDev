@@ -29,6 +29,7 @@ public class PlayerCollision : MonoBehaviour
         {
             donutsCollected += 1;
             Debug.Log("Player touched donut. Donuts collected: " + donutsCollected);
+            collision.gameObject.SetActive(false);
         }
     }
 }
