@@ -1,15 +1,16 @@
 using System;
 using UnityEngine;
+using UnityEngine.SceneManagement;
+using TMPro;
 
 public class PlayerCollision : MonoBehaviour
 {
-    [SerializeField] static int playerHealth = 3;
-    static int donutsCollected = 0;
+    public GameObject ending;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        
+      
     }
 
     // Update is called once per frame
@@ -20,16 +21,27 @@ public class PlayerCollision : MonoBehaviour
 
     private void OnCollisionEnter(Collision collision)
     {
-        if (collision.gameObject.CompareTag("Danger"))
+        switch(collision.gameObject.tag)
         {
-            playerHealth -= 1;
-            Debug.Log("Player touched danger. Player health: " +  playerHealth);
-        }
-        else if (collision.gameObject.CompareTag("Donut"))
-        {
-            donutsCollected += 1;
-            Debug.Log("Player touched donut. Donuts collected: " + donutsCollected);
-            collision.gameObject.SetActive(false);
+            case "Danger":
+                PlayerHealthScore.playerHealth -= 1;
+                Debug.Log("Player touched danger. Player health: " + PlayerHealthScore.playerHealth);
+                break;
+
+            case "Donut":
+                PlayerHealthScore.donutsCollected += 1;
+                Debug.Log("Player touched donut. Donuts collected: " + PlayerHealthScore.donutsCollected);
+                collision.gameObject.SetActive(false);
+                break;
+
+            case "Ocean":
+                SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+                Debug.Log("Player died");
+                break;
+
+            case "Ending":
+                ending.GetComponent<TMP_Text>().text = "YOU WIN!";
+                break;
         }
     }
 }
