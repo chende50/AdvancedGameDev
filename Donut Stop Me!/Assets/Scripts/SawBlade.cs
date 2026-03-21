@@ -21,6 +21,6 @@ public class SawBlade : MonoBehaviour
         gameObject.transform.Rotate(spinVector, Space.Self);
 
         POSITION += MOVE_SPEED * Time.deltaTime;
-        gameObject.transform.localPosition = new Vector3(0, 0, Mathf.Sin(POSITION));
+        gameObject.transform.localPosition = new Vector3(gameObject.transform.localPosition.x, 0, Mathf.Sin(POSITION));
     }
 }
