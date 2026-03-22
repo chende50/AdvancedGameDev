@@ -8,6 +8,7 @@ TagManager:
   - Ground
   - Donut
   - Ocean
+  - Ending
   layers:
   - Default
   - TransparentFX
