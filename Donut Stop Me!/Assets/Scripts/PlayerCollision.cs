@@ -40,6 +40,10 @@ public class PlayerCollision : MonoBehaviour
                 break;
 
             case "Ending":
+                if(PlayerHealthScore.donutsCollected == 3)
+                {
+                    SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+                }
                 ending.GetComponent<TMP_Text>().text = "YOU WIN!";
                 break;
         }
