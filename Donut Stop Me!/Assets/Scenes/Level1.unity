@@ -2202,6 +2202,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1444510080}
     m_Modifications:
+    - target: {fileID: 657067035362911150, guid: 380287f50b6d85c44a78fc73bcd3bbce, type: 3}
+      propertyPath: POSITION
+      value: -1
+      objectReference: {fileID: 0}
     - target: {fileID: 1522957048453749876, guid: 380287f50b6d85c44a78fc73bcd3bbce, type: 3}
       propertyPath: m_Name
       value: Sawblade (2)
@@ -4476,6 +4480,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1444510080}
     m_Modifications:
+    - target: {fileID: 657067035362911150, guid: 380287f50b6d85c44a78fc73bcd3bbce, type: 3}
+      propertyPath: POSITION
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1522957048453749876, guid: 380287f50b6d85c44a78fc73bcd3bbce, type: 3}
       propertyPath: m_Name
       value: Sawblade
