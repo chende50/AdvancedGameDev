@@ -16,7 +16,15 @@ public class PlayerJump : MonoBehaviour
 
     }
 
-    public void OnJump()
+    public void Update()
+    {
+        if(Keyboard.current.spaceKey.wasPressedThisFrame)
+        {
+            Jump();
+        }
+    }
+
+    public void Jump()
     {
         if (isGrounded)
         {
@@ -24,7 +32,7 @@ public class PlayerJump : MonoBehaviour
             isGrounded = false;
             if (animator != null)
             {
-                    animator.SetBool("isJumping", true);
+                animator.SetBool("isJumping", true);
             }
         }
     }
