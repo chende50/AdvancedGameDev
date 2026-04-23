@@ -1,10 +1,8 @@
 using UnityEngine;
 
-public class SawBlade : MonoBehaviour
+public class Hammer : MonoBehaviour
 {
     public int SPIN_SPEED;
-    public int MOVE_SPEED;
-    public float POSITION;
 
     private Vector3 spinVector = Vector3.zero;
 
@@ -17,10 +15,7 @@ public class SawBlade : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        spinVector.x = SPIN_SPEED * Time.deltaTime;
+        spinVector.z = SPIN_SPEED * Time.deltaTime;
         gameObject.transform.Rotate(spinVector, Space.Self);
-
-        POSITION += MOVE_SPEED * Time.deltaTime;
-        gameObject.transform.localPosition = new Vector3(gameObject.transform.localPosition.x, 0, Mathf.Sin(POSITION));
     }
 }
