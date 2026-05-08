@@ -44,7 +44,6 @@ public class PlayerCollision : MonoBehaviour
                 {
                     SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
                 }
-                ending.GetComponent<TMP_Text>().text = "YOU WIN!";
                 break;
         }
     }
