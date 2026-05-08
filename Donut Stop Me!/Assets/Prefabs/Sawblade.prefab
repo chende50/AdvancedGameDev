@@ -224,8 +224,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: '::'
   SPIN_SPEED: 500
-  MOVE_SPEED: 10
-  POSITION: 0
+  MOVE_SPEED: 1
+  POSITION: 1
 --- !u!54 &5602931953905260832
 Rigidbody:
   m_ObjectHideFlags: 0
